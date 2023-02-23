@@ -79,9 +79,7 @@ public class MovieRepository {
     // method to remove movie and director
 
     public  void deleteDirectorByName(String director){ //8
-        if(directorMovieMap.containsKey(director)){
-            directorMovieMap.remove(director);
-        }
+
         if(directorMap.containsKey(director)){
             directorMap.remove(director);
         }
