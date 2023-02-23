@@ -82,6 +82,9 @@ public class MovieRepository {
         if(directorMovieMap.containsKey(director)){
             directorMovieMap.remove(director);
         }
+        if(directorMap.containsKey(director)){
+            directorMap.remove(director);
+        }
     }
 
     // method to delete all the director and their movies..
