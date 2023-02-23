@@ -90,6 +90,7 @@ public class MovieRepository {
         for(String x: directorMap.keySet()){
             if(directorMovieMap.containsKey(x)){
                 directorMovieMap.remove(x);
+                directorMap.remove(x);
             }
         }
     }
