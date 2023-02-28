@@ -93,6 +93,7 @@ public class MovieRepository {
                for(String movie: directorMovieMap.get(director)){
                    movieMap.remove(movie);
                }
+               directorMovieMap.remove(director);
            }else{
                directorMap.remove(director);
            }
