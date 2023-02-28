@@ -79,7 +79,7 @@ public class MovieRepository {
     public  void deleteDirectorByName(String director){ //8
 
         if(directorMap.containsKey(director)&&directorMovieMap.containsKey(director)){
-            for(String movie: directorMovieMap.get(director)) directorMap.remove(director);
+            for(String movie: directorMovieMap.get(director)) movieMap.remove(movie);
 
             directorMovieMap.remove(director);
         }
